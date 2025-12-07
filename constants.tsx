@@ -34,7 +34,7 @@ export const SECTIONS: SectionContent[] = [
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white mb-4">What is Artificial Intelligence?</h2>
             <p className="text-lg text-blue-100 leading-relaxed max-w-3xl">
-              Artificial Intelligence (AI) is a multidisciplinary branch of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence. These tasks include visual perception, speech recognition, decision-making, and translation between languages.
+              Artificial Intelligence (AI) is a branch of computer science focused on building smart machines capable of performing tasks that typically need human intelligence. These tasks include seeing, recognizing speech, making decisions, and translating languages.
             </p>
           </div>
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full"></div>
@@ -43,7 +43,7 @@ export const SECTIONS: SectionContent[] = [
         {/* The 3 Levels */}
         <div>
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <GitBranch className="text-blue-400" /> The Taxonomy of Intelligence
+                <GitBranch className="text-blue-400" /> The 3 Levels of AI
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
                 <div className="glass-card p-6 rounded-xl hover:border-blue-500/50 transition-colors group">
@@ -52,7 +52,7 @@ export const SECTIONS: SectionContent[] = [
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Artificial Narrow Intelligence</h4>
                     <p className="text-sm text-slate-400 leading-relaxed">
-                        <strong>Goal-oriented</strong>, designed to solve a specific problem (e.g., Chess, Facial Recognition). This represents 100% of current AI technology. It cannot transfer learning to new, unrelated domains.
+                        <strong>Specific AI.</strong> It is designed to do one specific thing very well, like playing Chess or recognizing faces. This is the only type of AI that exists today. It cannot do tasks it wasn't programmed for.
                     </p>
                 </div>
                 <div className="glass-card p-6 rounded-xl hover:border-purple-500/50 transition-colors group">
@@ -61,7 +61,7 @@ export const SECTIONS: SectionContent[] = [
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Artificial General Intelligence</h4>
                     <p className="text-sm text-slate-400 leading-relaxed">
-                        A theoretical system with the capacity to understand, learn, and apply knowledge across a wide variety of tasks, indistinguishable from a human mind. It implies <strong>consciousness</strong> and adaptability.
+                        <strong>Human-level AI.</strong> A theoretical system that can learn, understand, and apply knowledge to <em>any</em> task, just like a human. It would be able to think creatively and adapt to new situations.
                     </p>
                 </div>
                 <div className="glass-card p-6 rounded-xl hover:border-pink-500/50 transition-colors group">
@@ -70,7 +70,7 @@ export const SECTIONS: SectionContent[] = [
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Artificial Super Intelligence</h4>
                     <p className="text-sm text-slate-400 leading-relaxed">
-                        Intellect that is much smarter than the best human brains in practically every field, including scientific creativity, general wisdom and social skills.
+                        <strong>Super-human AI.</strong> An intellect that is much smarter than the best human brains in every field, including scientific creativity, wisdom, and social skills.
                     </p>
                 </div>
             </div>
@@ -79,21 +79,21 @@ export const SECTIONS: SectionContent[] = [
         {/* Visualization of Growth */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-white">The Modern Paradigm Shift</h3>
+                <h3 className="text-2xl font-bold text-white">How Computers Learn</h3>
                 <p className="text-slate-300">
-                    Traditional programming (Symbolic AI) relied on explicit rules: <code className="bg-slate-800 px-1 py-0.5 rounded text-yellow-300">if X then Y</code>.
+                    Old computer programs followed strict lists of rules: <code className="bg-slate-800 px-1 py-0.5 rounded text-yellow-300">if This then That</code>.
                 </p>
                 <p className="text-slate-300">
-                    Modern Machine Learning relies on <strong>Data-Driven Inference</strong>. We provide the inputs and the desired outputs, and the algorithm figures out the "rules" (the function) that maps them.
+                    Modern AI uses <strong>Machine Learning</strong>. Instead of giving the computer the rules, we give it the data (questions and answers), and the computer figures out the rules by itself.
                 </p>
                 <ul className="space-y-3 mt-4">
                     <li className="flex items-center gap-3 text-sm text-slate-300">
                         <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                        <strong>Machine Learning:</strong> Statistical techniques to enable machines to improve at tasks with experience.
+                        <strong>Machine Learning:</strong> Methods that let computers improve at tasks through experience.
                     </li>
                     <li className="flex items-center gap-3 text-sm text-slate-300">
                         <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                        <strong>Deep Learning:</strong> A subset of ML based on artificial neural networks, capable of learning unstructured data.
+                        <strong>Deep Learning:</strong> A type of machine learning inspired by the human brain, capable of learning from messy data like images and text.
                     </li>
                 </ul>
             </div>
@@ -107,7 +107,7 @@ export const SECTIONS: SectionContent[] = [
   {
     id: 'algorithms',
     title: 'Algorithms & Architecture',
-    subtitle: 'The Mathematics of Learning',
+    subtitle: 'The Math Behind the Magic',
     icon: Binary,
     color: 'from-violet-500 to-purple-600',
     content: (
@@ -118,13 +118,16 @@ export const SECTIONS: SectionContent[] = [
             <div>
                  <h2 className="text-3xl font-bold text-white mb-4">The Neural Network</h2>
                  <p className="text-slate-300 mb-6 leading-relaxed">
-                    Inspired by biological neurons, the <strong>Perceptron</strong> is the fundamental building block. It takes inputs, applies <strong>Weights</strong> (importance) and a <strong>Bias</strong> (activation threshold), sums them up, and passes the result through an <strong>Activation Function</strong> (like ReLU or Sigmoid) to introduce non-linearity.
+                    Think of a Neural Network like a digital brain. It is made up of tiny units called <strong>Neurons</strong> (or Perceptrons). 
+                 </p>
+                 <p className="text-slate-300 mb-6 leading-relaxed">
+                    Each neuron receives information, decides how important it is (assigns a <strong>Weight</strong>), and if the signal is strong enough, it passes it to the next neuron.
                  </p>
                  <div className="bg-slate-900/50 p-4 rounded-lg border-l-4 border-violet-500 mb-6">
-                    <code className="text-sm font-mono text-violet-300">Output = Activation( Σ (Input × Weight) + Bias )</code>
+                    <code className="text-sm font-mono text-violet-300">Output = Is the Signal Strong Enough? ( Input × Importance )</code>
                  </div>
                  <p className="text-sm text-slate-400">
-                    Deep Learning occurs when we stack many of these layers ("Hidden Layers"). The "Learning" is essentially the process of adjusting these Weights using an algorithm called <strong>Backpropagation</strong> to minimize error.
+                    "Learning" happens when the network makes a mistake and then goes back to adjust the "Importance" (Weights) so it doesn't make the same mistake again. This correction process is called <strong>Backpropagation</strong>.
                  </p>
             </div>
             <div className="w-full">
@@ -134,7 +137,7 @@ export const SECTIONS: SectionContent[] = [
 
         {/* Types of Learning */}
         <div>
-            <h3 className="text-2xl font-bold text-white mb-6">Core Methodologies</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">How AI Learns</h3>
             <div className="grid md:grid-cols-3 gap-6">
                 {/* Supervised */}
                 <div className="bg-slate-900 p-6 rounded-xl border border-slate-800">
@@ -143,10 +146,10 @@ export const SECTIONS: SectionContent[] = [
                         <h4 className="font-bold text-lg">Supervised Learning</h4>
                     </div>
                     <p className="text-sm text-slate-400 mb-4 h-20">
-                        The model trains on labeled data (Input + Correct Answer). It learns to map inputs to outputs.
+                        <strong>Like learning with a teacher.</strong> The AI is given data with the correct answers (labels). It learns to connect the input to the answer.
                     </p>
                     <div className="text-xs font-mono text-slate-500 border-t border-slate-800 pt-3">
-                        Examples: Spam Filters, Medical Diagnosis, Image Classification.
+                        Example: Teaching an AI to spot cats by showing it labeled photos of cats.
                     </div>
                 </div>
 
@@ -157,10 +160,10 @@ export const SECTIONS: SectionContent[] = [
                         <h4 className="font-bold text-lg">Unsupervised Learning</h4>
                     </div>
                     <p className="text-sm text-slate-400 mb-4 h-20">
-                        The model finds hidden patterns or intrinsic structures in input data without labeled responses.
+                        <strong>Like learning by self-discovery.</strong> The AI looks at data without any answers and tries to find patterns or groups on its own.
                     </p>
                     <div className="text-xs font-mono text-slate-500 border-t border-slate-800 pt-3">
-                        Examples: Customer Segmentation, Anomaly Detection, DNA Clustering.
+                        Example: Grouping customers who buy similar things.
                     </div>
                 </div>
 
@@ -171,10 +174,10 @@ export const SECTIONS: SectionContent[] = [
                         <h4 className="font-bold text-lg">Reinforcement Learning</h4>
                     </div>
                     <p className="text-sm text-slate-400 mb-4 h-20">
-                        An agent learns to make decisions by performing actions in an environment and receiving rewards or penalties.
+                        <strong>Like learning by trial and error.</strong> The AI tries different actions and gets a reward for good results or a penalty for bad ones.
                     </p>
                     <div className="text-xs font-mono text-slate-500 border-t border-slate-800 pt-3">
-                        Examples: Robotics, AlphaGo, Self-driving car navigation.
+                        Example: Teaching a robot to walk or an AI to play video games.
                     </div>
                 </div>
             </div>
@@ -183,16 +186,16 @@ export const SECTIONS: SectionContent[] = [
         {/* Visual Deep Dive */}
         <div className="grid lg:grid-cols-2 gap-8">
             <div className="space-y-4">
-                 <h3 className="text-xl font-bold text-white">Example: Clustering (Unsupervised)</h3>
+                 <h3 className="text-xl font-bold text-white">Example: Clustering</h3>
                  <p className="text-sm text-slate-400">
-                    Algorithms like K-Means organize data points into groups based on similarity (distance).
+                    This is an example of Unsupervised Learning. The AI groups data points together based on how similar they are, without being told what the groups are.
                  </p>
                  <ClusteringVisual />
             </div>
             <div className="space-y-4">
-                 <h3 className="text-xl font-bold text-white">Evaluating Performance</h3>
+                 <h3 className="text-xl font-bold text-white">Did the AI get it right?</h3>
                  <p className="text-sm text-slate-400">
-                    How do we know if an AI works? We look at metrics like Precision and Recall using a Confusion Matrix.
+                    We use a "Confusion Matrix" to check performance. It shows us when the AI was right, and exactly <em>how</em> it was wrong (e.g., did it miss a cancer diagnosis, or did it say a healthy person was sick?).
                  </p>
                  <ConfusionMatrix />
             </div>
@@ -210,10 +213,12 @@ export const SECTIONS: SectionContent[] = [
     content: (
       <div className="space-y-10">
          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold text-white mb-4">Convolutional Neural Networks (CNNs)</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Seeing with Math</h2>
             <p className="text-slate-300 leading-relaxed mb-6">
-                Images are just grids of numbers (pixel values) to a computer. To understand content, AI uses a specialized architecture called a CNN.
-                Instead of processing every pixel individually, it uses <strong>Filters (Kernels)</strong> that slide across the image to detect features like vertical lines, curves, or textures.
+                To a computer, a picture is just a giant grid of numbers (pixels). To understand what is in the picture, AI uses a tool called a <strong>Convolutional Neural Network (CNN)</strong>.
+            </p>
+            <p className="text-slate-300 leading-relaxed">
+                Instead of looking at every single pixel one by one, the AI uses small <strong>Filters</strong> to scan the image. These filters look for specific patterns like straight lines, corners, or circles.
             </p>
          </div>
 
@@ -221,16 +226,16 @@ export const SECTIONS: SectionContent[] = [
 
          <div className="grid md:grid-cols-3 gap-6 mt-8">
              <div className="glass-card p-5 rounded-lg border-l-2 border-orange-500">
-                 <h4 className="font-bold text-white mb-2">1. Convolution</h4>
-                 <p className="text-sm text-slate-400">Extracts features using filters. Early layers see edges; later layers see eyes, ears, or wheels.</p>
+                 <h4 className="font-bold text-white mb-2">1. Convolution (Scanning)</h4>
+                 <p className="text-sm text-slate-400">The AI scans the image to find features. Early layers find edges; later layers find eyes, ears, or tires.</p>
              </div>
              <div className="glass-card p-5 rounded-lg border-l-2 border-orange-500">
-                 <h4 className="font-bold text-white mb-2">2. Pooling</h4>
-                 <p className="text-sm text-slate-400">Downsamples the image to reduce computation and prevent overfitting, keeping only important features.</p>
+                 <h4 className="font-bold text-white mb-2">2. Pooling (Simplifying)</h4>
+                 <p className="text-sm text-slate-400">The AI shrinks the image information down to keep only the most important parts. This saves processing power.</p>
              </div>
              <div className="glass-card p-5 rounded-lg border-l-2 border-orange-500">
-                 <h4 className="font-bold text-white mb-2">3. Fully Connected</h4>
-                 <p className="text-sm text-slate-400">Flattens the feature map into a list and uses a standard neural network to classify the object.</p>
+                 <h4 className="font-bold text-white mb-2">3. Classification (Deciding)</h4>
+                 <p className="text-sm text-slate-400">The AI takes all the features it found and makes a final decision: "This is a cat."</p>
              </div>
          </div>
       </div>
@@ -239,36 +244,36 @@ export const SECTIONS: SectionContent[] = [
   {
     id: 'applications',
     title: 'Real World Applications',
-    subtitle: 'Industry 4.0 Transformation',
+    subtitle: 'AI in Daily Life',
     icon: Briefcase,
     color: 'from-emerald-500 to-teal-600',
     content: (
        <div className="space-y-10">
           <p className="text-xl text-slate-300">
-            AI has moved beyond academic research into the fabric of daily life and critical infrastructure.
+            AI is no longer just a science experiment; it is now a part of our daily lives and industries.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {[
                 {
-                    title: 'Precision Medicine',
-                    desc: 'AI models analyze genomic data to predict disease susceptibility and tailor treatments. Deep learning algorithms scan radiology images (X-Rays, CTs) to detect tumors earlier than human radiologists.',
-                    tags: ['Healthcare', 'Genomics']
+                    title: 'Smart Healthcare',
+                    desc: 'AI analyzes DNA to predict diseases. It also scans medical images (like X-Rays) to find problems such as tumors faster and sometimes more accurately than doctors.',
+                    tags: ['Health', 'Genomics']
                 },
                 {
-                    title: 'Algorithmic Trading',
-                    desc: 'High-frequency trading bots execute millions of orders in milliseconds based on micro-fluctuations in the market. Sentiment analysis scans news to predict stock movements.',
-                    tags: ['Finance', 'Fintech']
+                    title: 'Smart Finance',
+                    desc: 'Super-fast computer programs buy and sell stocks in milliseconds based on tiny market changes. AI also reads news articles to guess if stock prices will go up or down.',
+                    tags: ['Money', 'Trading']
                 },
                 {
                     title: 'Generative Design',
-                    desc: 'Engineers input constraints (weight, material, cost) and AI generates thousands of CAD options, often resulting in organic, alien-like structures that are lighter and stronger.',
-                    tags: ['Engineering', 'Manufacturing']
+                    desc: 'Engineers tell the AI what they need (e.g., a lightweight car part), and the AI draws thousands of options. The results often look alien/organic but are stronger and lighter.',
+                    tags: ['Engineering', 'Design']
                 },
                 {
-                    title: 'Natural Language Processing',
-                    desc: 'Transformers (like GPT and Gemini) power real-time translation, code generation, and complex reasoning agents that can pass the Bar Exam or write poetry.',
-                    tags: ['NLP', 'Communication']
+                    title: 'Language & Chatbots',
+                    desc: 'Advanced systems (like ChatGPT or Gemini) can translate languages instantly, write code, or act as smart assistants that can pass difficult exams.',
+                    tags: ['Language', 'Communication']
                 }
             ].map((item, i) => (
                 <div key={i} className="bg-slate-900/50 hover:bg-slate-800/80 transition-all p-6 rounded-2xl border border-slate-700 hover:border-emerald-500/50 group">
@@ -292,16 +297,16 @@ export const SECTIONS: SectionContent[] = [
   {
     id: 'ethics',
     title: 'Ethics & Safety',
-    subtitle: 'The Alignment Problem',
+    subtitle: 'Important Questions',
     icon: ShieldAlert,
     color: 'from-rose-500 to-red-600',
     content: (
       <div className="space-y-8">
          <div className="bg-rose-950/30 border border-rose-500/30 p-8 rounded-2xl relative overflow-hidden">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-rose-500/10 rounded-full blur-3xl"></div>
-            <h3 className="text-2xl font-bold text-rose-200 mb-4">The Black Box Problem</h3>
+            <h3 className="text-2xl font-bold text-rose-200 mb-4">The "Black Box" Problem</h3>
             <p className="text-rose-100/80 max-w-2xl leading-relaxed">
-                Modern Deep Learning models are often opaque; even their creators cannot fully explain <em>why</em> a model made a specific decision. In high-stakes fields like criminal justice or healthcare, this lack of explainability (Interpretability) is a critical ethical hurdle.
+                Modern AI is often like a "Black Box." This means that sometimes, even the creators don't know exactly <em>why</em> the AI made a specific decision. In important areas like law or medicine, we need to know the "why," not just the answer.
             </p>
          </div>
 
@@ -310,21 +315,21 @@ export const SECTIONS: SectionContent[] = [
                 <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700 text-rose-400 font-bold">1</div>
                 <h4 className="text-lg font-bold text-white">Bias & Fairness</h4>
                 <p className="text-sm text-slate-400">
-                    If training data contains historical biases (e.g., hiring data favoring men), the AI will codify and scale that discrimination, often subtly.
+                    If an AI learns from old data that contains bias (e.g., hiring data that favors men), the AI will repeat that discrimination. It can make unfairness faster and more widespread.
                 </p>
             </div>
             <div className="space-y-3">
                 <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700 text-rose-400 font-bold">2</div>
-                <h4 className="text-lg font-bold text-white">Disinformation</h4>
+                <h4 className="text-lg font-bold text-white">Fake Information</h4>
                 <p className="text-sm text-slate-400">
-                    Generative AI reduces the cost of creating fake news and deepfakes to near zero, threatening democratic processes and truth verification.
+                    AI makes it very cheap to create fake news, fake images (Deepfakes), and spam. This makes it harder for people to know what is true.
                 </p>
             </div>
             <div className="space-y-3">
                 <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700 text-rose-400 font-bold">3</div>
-                <h4 className="text-lg font-bold text-white">Value Alignment</h4>
+                <h4 className="text-lg font-bold text-white">Alignment</h4>
                 <p className="text-sm text-slate-400">
-                    Ensuring an AGI's goals match human values. A superintelligent system optimized for "paperclips" could theoretically consume all earth's resources to make them.
+                    We must ensure AI goals match human values. If we tell a super-smart AI to "fix cancer" at all costs, we need to make sure it doesn't do something harmful to achieve that goal.
                 </p>
             </div>
          </div>
